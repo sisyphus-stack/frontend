@@ -8,6 +8,7 @@ body, html {
 	height: 100vh;
 	width: 100%;
 	background-color: red;
+	display: flex;
 }
 
 .grid {
@@ -15,10 +16,14 @@ body, html {
   height: 200px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  background-color: blue;
 }
 
 .grid div {
 	height: 10px;
 	width: 10px;
+}
+
+.tetromino {
+	background-color: white;
 }
