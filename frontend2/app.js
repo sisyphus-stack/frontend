@@ -1,11 +1,14 @@
  document.addEventListener('DOMContentLoaded', () => {
  	const grid = document.querySelector('.grid')
-    let squares = Array.from(document.querySelectorAll('.grid div'))
+ 	
+ 	for(j = 0; j < (window.innerHeight / 25); j++){for(i = 0; i < (window.innerWidth / 25); i++) {iDiv = document.createElement("div");
+ 	grid.appendChild(iDiv); iDiv.style.backgroundColor="yellow"}}
+ 	 let squares = Array.from(document.querySelectorAll('.grid div'))
+ 	console.log(`Width: ${window.innerWidth}, Height: ${window.innerHeight}, Number Squares: ${squares.length}`)
+ 	const width = window.innerWidth / 25
+    let currentPosition = 0
     
-    const width = 10
-    let currentPosition = 4
-    
-    const Tetromino = [0,1,width,width+1]
+    const Tetromino = [0]
     
     function draw() {
     Tetromino.forEach(index => {
@@ -49,7 +52,7 @@
   }
 
    function moveDown() {
-    	if(currentPosition < 180){
+    	if(currentPosition < 16000){
     	undraw()
     	currentPosition += width
     	draw()

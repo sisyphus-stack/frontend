@@ -2,5 +2,5 @@
 clear
 git init
 git add .
-git commit -m "Need to make BizAPI.py compatible with coinlayer_api.py to run asynchronously"
+git commit -m "commit 4"
 git push -u origin master
