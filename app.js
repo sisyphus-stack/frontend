@@ -2,10 +2,10 @@
  	const grid = document.querySelector('.grid')
     let squares = Array.from(document.querySelectorAll('.grid div'))
     
-    const width = 10
+    const width = 20
     let currentPosition = 4
     
-    const Tetromino = [0,1,width,width+1]
+    const Tetromino = [0,1, width, width+1]
     
     function draw() {
     Tetromino.forEach(index => {
