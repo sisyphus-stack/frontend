@@ -1,0 +1,19 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	height: 100vh;
+	width: 100%;
+	background-color: green;
+	display: flex;
+}
+
+.container {
+	background-color: black;
+    position: absolute;
+    flex-wrap: wrap;
+    margin: 50px;
+}
